@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/1000.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-dark">
+        <div class="container">
+          <a class="navbar-brand d-flex" href="">
+            <img src="Images/logo.png" height="40px" class="me-2" alt="logo">
+            <div class="">
+              <h1 class="logo-title">Weather</h1>
+              <small class="logo-desc">tagline goes here</small>
+            </div>
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="ms-auto d-flex">
+              <li class="mx-4">
+                <a class="" role="button">Home</a>
+              </li> 
+              <li class="mx-4">
+                <a class="p-2" role="button">News</a>
+              </li>
+              <li class="mx-4">
+                <a class="p-2" role="button">Live cameras</a>
+              </li>
+              <li class="mx-4">
+                <a class="p-2" role="button">Photos</a>
+              </li>
+              <li class="mx-4">
+                <a class="p-2" role="button">Contact</a>
+              </li>
+            </ul>
+
+            <!-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item me-4">
+                <a class="nav-link" role="button">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" role="button">News</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" role="button">Live cameras</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" role="button">Photos</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" role="button">Contact</a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+    </nav>
+
+    <div class="all">
+
+
+
+      <div class="container py-5">
+        <form class="find">
+          <input class="w-100 rounded-5 border-0 " type="text"  id="searchInp" placeholder="Find your location..." >
+        </form>
+
+        
+      </div>
+
+
+      <div class="mt-3">
+
+        <div class="above container rounded-3">
+          <div class="row h-100" id="total">
+                        <!-- Today -->
+                <div class="all1 col-md-4 p-0">
+                  <div class="today d-flex justify-content-between p-2">
+                      <div id="todayName">Tuesday</div>
+                      <div class="d-flex">
+                        <div id="todayNumber">9</div>
+                        <div id="todayMonth">Feb</div>
+                      </div>
+                  </div>
+  
+                  <div class="p-4">
+                      <div id="city">Jose D. Lopez D.</div>
+                      <div id="tempCelsiusToday">33&deg;C</div>
+                      <div><img id="todayIcon" src="Images/1.png" alt=""></div>
+                      <div id="todayStatus" class="text-primary mb-3">Partly cloudy</div>
+  
+                      <div id="todayFooter" class="d-flex">
+
+                        <div class="d-flex">
+                          <div class="me-2"><img src="Images/icon-umberella.png" alt="umberella"></div>
+                          <div id="humidity">20%</div>
+                        </div>
+
+                        <div class="d-flex mx-4">
+                          <div class="me-2"><img src="Images/icon-wind.png" alt="wind"></div>
+                          <div id="wind">18 km/h</div>
+                        </div>
+
+                        <div class="d-flex">
+                          <div class="me-2"><img src="Images/icon-compass.png" alt="compass"></div>
+                          <div id="windDirection">East</div>
+                        </div>
+                      
+                      </div>
+  
+                  </div>
+  
+                </div>
+
+                        <!-- Tomorrow -->  
+                <div class="all2 col-md-4 p-0">
+                  <div class="nextName d-flex justify-content-center p-2">Tuesday</div>
+
+                  <div class="text-center">
+                      <div class="mt-5 mb-3"><img class="nextIcon" src="Images/1.png" alt=""></div>
+                      <div class="tempCelsiusNext" >20.3&deg;C</div>
+                      <div class="tempFahrenheit mb-3">13.9&deg;</div>
+                      <div class="text-primary mb-3 nextStatus">sunny</div>
+                  </div>
+  
+                </div>
+                        <!-- After Tomorrow -->
+                <div class="all3 col-md-4 p-0">
+                  <div class="nextName d-flex justify-content-center p-2">Tuesday</div>
+  
+                  <div class="text-center">
+                      <div class="mt-5 mb-3"><img class="nextIcon" src="Images/176.png" alt=""></div>
+                      <div class="tempCelsiusNext" >20.5&deg;C</div>
+                      <div class="tempFahrenheit mb-3">14.3&deg;</div>
+                      <div class="text-primary mb-3 nextStatus">Overcast</div>
+                  </div>
+                </div>
+              
+          </div>
+        </div> 
+
+      </div>
+
+    </div>
+
+    <footer  >
+      <div class="container d-flex justify-content-between py-5">
+        <div class="w-75 subscribe">
+          <input class="w-100 p-3 rounded-5 border-0 footInp" type="text"  placeholder="Enter your email to subscribe..." >
+        </div>
+
+        <div class="  icons">
+          <div class="icon ">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" ></i></a>
+          </div>
+          <div class="icon ">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="icon ">
+            <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="icon ">
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <p class="text-white-50">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+
+    </footer>
+
+
+
+    
+    <script src="JS/all.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
